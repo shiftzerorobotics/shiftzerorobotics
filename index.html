@@ -3,8 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShiftZero Robotics</title>
+    <title>ShiftZero Robotics | Advanced Autonomous Solutions</title>
+    <meta name="description" content="ShiftZero Robotics specializes in autonomous mobile robots and computer vision solutions for industrial automation.">
     <link rel="stylesheet" href="style.css">
+    <style>
+        .capability-card:hover {
+            transform: translateY(-5px);
+            border-color: #555;
+            box-shadow: 0 15px 40px rgba(255, 255, 255, 0.1);
+            background: rgba(255,255,255,0.02);
+        }
+    </style>
 </head>
 <body>
 
@@ -22,14 +31,26 @@
             <span class="logo-top">SHIFTZERO</span>
             <span class="logo-bottom">ROBOTICS & AUTOMATION</span>
         </div>
+        <p style="margin-top: 20px; font-size: 1.2rem; color: #999; max-width: 600px;">
+            Pioneering autonomous robotics and computer vision solutions for the future of industry
+        </p>
     </header>
 
     <main class="container">
-        
+
         <section class="row">
             <div class="text-side">
                 <h2>Indoor Mobile Robot</h2>
-                <p>Advanced autonomous delivery and logistics solutions.</p>
+                <p style="margin-bottom: 15px;">Advanced autonomous delivery and logistics solutions powered by cutting-edge navigation algorithms.</p>
+                <p style="color: #999; font-size: 0.95rem;">
+                    Our AMR (Autonomous Mobile Robot) platform features SLAM-based navigation, dynamic obstacle avoidance,
+                    and fleet management capabilities. Ideal for warehouses, hospitals, and manufacturing facilities.
+                </p>
+                <div style="margin-top: 20px;">
+                    <span style="display: inline-block; padding: 6px 12px; background: rgba(255,255,255,0.1); border-radius: 5px; margin-right: 10px; font-size: 0.85rem;">LiDAR Integration</span>
+                    <span style="display: inline-block; padding: 6px 12px; background: rgba(255,255,255,0.1); border-radius: 5px; margin-right: 10px; font-size: 0.85rem;">Path Planning</span>
+                    <span style="display: inline-block; padding: 6px 12px; background: rgba(255,255,255,0.1); border-radius: 5px; font-size: 0.85rem;">Fleet Management</span>
+                </div>
             </div>
             <div class="image-side">
                 <img src="indoor-delivery-robot.png" alt="Indoor Delivery Robot">
@@ -39,14 +60,57 @@
         <section class="row reverse">
             <div class="text-side">
                 <h2>2D/3D Vision Based Solutions</h2>
-                <p>Precision guidance and inspection using state-of-the-art imaging.</p>
+                <p style="margin-bottom: 15px;">Precision guidance and inspection using state-of-the-art imaging technology and deep learning models.</p>
+                <p style="color: #999; font-size: 0.95rem;">
+                    Our computer vision systems leverage advanced neural networks for object detection, classification,
+                    and depth estimation. Applications include quality inspection, robotic guidance, and defect detection.
+                </p>
+                <div style="margin-top: 20px;">
+                    <span style="display: inline-block; padding: 6px 12px; background: rgba(255,255,255,0.1); border-radius: 5px; margin-right: 10px; font-size: 0.85rem;">Deep Learning</span>
+                    <span style="display: inline-block; padding: 6px 12px; background: rgba(255,255,255,0.1); border-radius: 5px; margin-right: 10px; font-size: 0.85rem;">3D Reconstruction</span>
+                    <span style="display: inline-block; padding: 6px 12px; background: rgba(255,255,255,0.1); border-radius: 5px; font-size: 0.85rem;">Real-time Processing</span>
+                </div>
             </div>
             <div class="image-side">
                 <img src="computer-vision-setup.png" alt="Computer Vision Setup">
             </div>
         </section>
 
+        <section style="margin: 80px 0; padding: 50px; background: linear-gradient(145deg, rgba(255,255,255,0.03) 0%, transparent 100%); border: 2px solid #222; border-radius: 15px; text-align: center;" class="fade-in">
+            <h2 style="font-size: 2.5rem; margin-bottom: 30px;">Our Core Capabilities</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 40px;">
+                <div style="padding: 30px; border: 1px solid #333; border-radius: 10px; transition: all 0.4s ease;" class="capability-card">
+                    <h3 style="font-size: 1.3rem; margin-bottom: 15px;">🤖 Autonomous Navigation</h3>
+                    <p style="color: #aaa;">Advanced SLAM algorithms and sensor fusion for precise localization and mapping</p>
+                </div>
+                <div style="padding: 30px; border: 1px solid #333; border-radius: 10px; transition: all 0.4s ease;" class="capability-card">
+                    <h3 style="font-size: 1.3rem; margin-bottom: 15px;">👁️ Computer Vision</h3>
+                    <p style="color: #aaa;">AI-powered visual perception systems for detection, tracking, and analysis</p>
+                </div>
+                <div style="padding: 30px; border: 1px solid #333; border-radius: 10px; transition: all 0.4s ease;" class="capability-card">
+                    <h3 style="font-size: 1.3rem; margin-bottom: 15px;">⚙️ Process Automation</h3>
+                    <p style="color: #aaa;">End-to-end automation solutions for manufacturing and logistics operations</p>
+                </div>
+            </div>
+        </section>
+
+        <section style="margin: 80px 0; text-align: center;" class="fade-in">
+            <h2 style="font-size: 2.5rem; margin-bottom: 20px;">Technology Stack</h2>
+            <p style="color: #999; margin-bottom: 40px; font-size: 1.1rem;">Built with industry-leading frameworks and tools</p>
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px;">
+                <span style="padding: 12px 20px; background: rgba(255,255,255,0.05); border: 1px solid #333; border-radius: 8px; font-size: 0.95rem;">ROS / ROS2</span>
+                <span style="padding: 12px 20px; background: rgba(255,255,255,0.05); border: 1px solid #333; border-radius: 8px; font-size: 0.95rem;">Python</span>
+                <span style="padding: 12px 20px; background: rgba(255,255,255,0.05); border: 1px solid #333; border-radius: 8px; font-size: 0.95rem;">C++</span>
+                <span style="padding: 12px 20px; background: rgba(255,255,255,0.05); border: 1px solid #333; border-radius: 8px; font-size: 0.95rem;">PyTorch</span>
+                <span style="padding: 12px 20px; background: rgba(255,255,255,0.05); border: 1px solid #333; border-radius: 8px; font-size: 0.95rem;">TensorFlow</span>
+                <span style="padding: 12px 20px; background: rgba(255,255,255,0.05); border: 1px solid #333; border-radius: 8px; font-size: 0.95rem;">OpenCV</span>
+                <span style="padding: 12px 20px; background: rgba(255,255,255,0.05); border: 1px solid #333; border-radius: 8px; font-size: 0.95rem;">PCL</span>
+                <span style="padding: 12px 20px; background: rgba(255,255,255,0.05); border: 1px solid #333; border-radius: 8px; font-size: 0.95rem;">Gazebo</span>
+            </div>
+        </section>
+
     </main>
 
+    <script src="script.js"></script>
 </body>
 </html>
