@@ -79,11 +79,18 @@ body {
     }
 }
 
+/* Site Header - logo left, nav right */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
 /* Navigation */
 .navbar {
     display: flex;
-    justify-content: flex-end;
-    padding: 20px 50px;
+    align-items: center;
 }
 
 .nav-links a {
@@ -110,11 +117,6 @@ body {
 }
 
 /* Header */
-.main-header {
-    text-align: center;
-    padding: 50px 0;
-}
-
 .main-header h1 {
     font-size: 3rem;
     letter-spacing: 2px;
@@ -220,12 +222,6 @@ body {
     }
 }
 
-/* Position the header in the top-left */
-.main-header {
-    text-align: left;
-    padding: 20px 50px;
-    animation: fadeIn 1s ease-out;
-}
 
 .logo-container {
     display: flex;
@@ -259,13 +255,10 @@ body {
     animation: slideInFromLeft 0.8s ease-out;
 }
 
-/* Adjust the Navbar to prevent overlap */
-.navbar {
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 10;
-    animation: slideInFromRight 0.6s ease-out;
+/* Position the header in the top-left */
+.main-header {
+    padding: 10px 50px 50px;
+    text-align: left;
 }
 
 /* Team Grid Styles */
@@ -499,27 +492,23 @@ body {
         font-size: 1.8rem;
     }
 
-    /* Fix mobile nav: switch from absolute to relative so tap targets align with visuals */
-    .navbar {
-        position: relative;
-        top: auto;
-        right: auto;
-        justify-content: center;
+    .site-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
         padding: 15px 20px;
     }
 
     .nav-links {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
+        gap: 8px;
     }
 
     .nav-links a {
         margin-left: 0;
         padding: 10px 14px;
         font-size: 0.85rem;
-        /* Ensure tap target is large enough and doesn't overlap */
         touch-action: manipulation;
     }
 }
