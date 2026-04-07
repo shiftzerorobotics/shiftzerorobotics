@@ -123,11 +123,10 @@ body {
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.6),
                 0 0 40px rgba(255, 255, 255, 0.3),
                 inset 0 0 10px rgba(255, 255, 255, 0.1);
-    transform: translateY(-2px) scale(1.05);
 }
 
 .nav-links a:active {
-    transform: translateY(0) scale(1);
+    opacity: 0.8;
 }
 
 /* Header */
@@ -520,9 +519,27 @@ body {
         font-size: 1.8rem;
     }
 
+    /* Fix mobile nav: switch from absolute to relative so tap targets align with visuals */
+    .navbar {
+        position: relative;
+        top: auto;
+        right: auto;
+        justify-content: center;
+        padding: 15px 20px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
     .nav-links a {
-        margin-left: 10px;
-        padding: 8px 12px;
+        margin-left: 0;
+        padding: 10px 14px;
         font-size: 0.85rem;
+        /* Ensure tap target is large enough and doesn't overlap */
+        touch-action: manipulation;
     }
 }
