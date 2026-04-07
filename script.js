@@ -164,23 +164,6 @@ const createLoadingAnimation = () => {
 
 document.addEventListener('DOMContentLoaded', createLoadingAnimation);
 
-// ========================================
-// 7. Interactive Button Glow on Mouse Move
-// ========================================
-document.addEventListener('DOMContentLoaded', () => {
-    const buttons = document.querySelectorAll('.nav-links a, .btn-primary');
-
-    buttons.forEach(button => {
-        button.addEventListener('mousemove', (e) => {
-            const rect = button.getBoundingClientRect();
-            const x = e.clientX - rect.left;
-            const y = e.clientY - rect.top;
-
-            button.style.setProperty('--mouse-x', `${x}px`);
-            button.style.setProperty('--mouse-y', `${y}px`);
-        });
-    });
-});
 
 // ========================================
 // 8. Typing Effect for Headers (Optional)
